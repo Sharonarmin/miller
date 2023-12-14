@@ -426,6 +426,7 @@ html,body{
 
 .news-blog-section{
     padding: 80px 10px;
+    border-bottom: 25px solid #FAEBC5;
 }
 
 .news-blog-section h2{
@@ -628,6 +629,15 @@ html,body{
     text-decoration: none;
 }
 
+
+
+.logo{
+    position: relative;
+}
+.logo img{
+    position: absolute;
+    z-index: 11;
+}
 /* carousel section */
 
 .carousel-item{
@@ -663,3 +673,174 @@ html,body{
     border-radius: 10px;
     text-decoration: none;
 }
+
+
+/* footer */
+
+
+footer{
+    padding: 50px 10px;
+}
+footer h3{
+    font-size: 24px;
+    color: var(--green);
+    margin-bottom: 25px;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0px;
+    
+}
+footer ul li a{
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+/* media screen 999 */
+
+@media  only screen and (max-width:999px){
+    .miller-navbar{
+        display: none;
+    }
+    .carousel-item{
+        height: auto;
+    }
+    .feature-section{
+        padding: 50px 10px;
+    }
+    .feature-card{
+        margin-bottom: 20px;
+    }
+    .counter-box{
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .counter-section .container{
+        padding: 40px 10px;
+    }
+    .famous-product-section{
+        padding: 50px 10px;
+    }
+    .famous-product-card{
+        margin-bottom: 40px;
+    }
+    .shop-all-btn{
+        margin-top: 10px;
+    }
+    .about-section-image{
+        height: 50vh;
+    }
+    .about-section{
+        padding: 50px 10px;
+    }
+    .featured-product-card{
+        margin-bottom: 20px;
+    }
+    .shop-catagory-card{
+        margin-bottom: 15px;
+    }
+    .mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
+    .mobile-nav-links ul{
+        list-style: none;
+        display: flex;
+    }
+    .mobile-nav-links ul li{
+        margin-left: 20px;
+    }
+    .mobile-nav-links ul{
+        margin-bottom: 0;
+    }
+    .mobile-nav-links .fa-bars{
+        color: #000;
+    }
+    .off-canvas-navbar ul{
+        list-style: none;
+        margin-top: 60px;
+
+    }
+    .off-canvas-navbar ul li a{
+        color: #000;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .feature-card h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .fresh-spices-section h3{
+        font-size: 30px;
+    }
+    .feature-product-section h2{
+        font-size: 30px;
+
+    }
+    .about-section h2{
+        font-size: 30px;
+    }
+    .shop-by-catagory-section h2{
+        font-size: 30px;
+    }
+    .our-way-of-life-section h2{
+        font-size: 30px;
+    }
+    .testimonial-section h2{
+        font-size: 30px;
+    }
+    .news-blog-section h2{
+        font-size: 30px;
+    }
+
+}
+
+
+@media only screen and (min-width:999px){
+    .mobile-navbar{
+        display: none;
+    }
+}
+
+/* mobile screen */
+
+@media  only screen and (max-width:767px) {
+    .select-store-btn{
+        margin-right: 30px;
+    }
+    .blog-card{
+        margin-bottom: 30px;
+    }
+    .news-letter-section{
+        padding: 20px 0;
+    }
+    .news-letter-section .container{
+        flex-direction: column;
+    }
+    .feature-card{
+        padding: 50px 30px;
+    }
+
+    /* mobile nav */
+
+    .news-letter-section .newsletter-input-box input{
+        padding: 0;
+    }
+    .offcanvas-start{
+        width: 320px;
+    }
+
+}
+
