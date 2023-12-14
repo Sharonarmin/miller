@@ -1,0 +1,665 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+    --white: #fff;
+    --green: #006434;
+}
+
+
+/* feature section */
+
+
+.feature-section{
+    position: relative;
+    padding: 100px 10px;
+}
+
+
+.feature-card{
+    position: relative;
+    background-image: url('../images/feature/flat-lay-asian-food-ingredients-frame.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 90px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 11;
+}
+.feature-card-1{
+    background-image: url('../images/feature/still-life-with-various-spices.jpg');
+
+}
+.feature-card::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a8;
+    z-index: -1;
+}
+
+.feature-card h3{
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.feature-card p{
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+
+/* counter section */
+
+.counter-section .container{
+    padding: 50px 10px;
+    border-top: 1px solid var(--green);
+    border-bottom: 1px solid var(--green);
+}
+
+.counter-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.counter-box .counter-div{
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.counter-box .counter-label{
+    margin-left: 10px;
+}
+
+/* famous product section */
+
+.famous-product-section{
+    padding: 80px 10px;
+}
+
+.famous-product-section h3{
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--green);
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.famous-product-card{
+    position: relative;
+    padding: 40px 20px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+.famous-product-card::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+
+.famous-product-card h4{
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.famous-product-card p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(255, 238, 0);
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.famous-product-card a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 5px 20px;
+    color: var(--green);
+    text-decoration: none;
+    border: 2px solid var(--green);
+    margin-bottom: 10px;
+}
+
+.famous-product-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shop-all-btn{
+    padding: 10px 35px;
+    color: var(--white);
+    background-color: var(--green);
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all ease-in .3s ;
+}
+.shop-all-btn:hover{
+    color: #000;
+}
+
+/* fresh spices section */
+
+.fresh-spices-section{
+    padding: 10px 10px;
+    background-color: #C4DDE1;
+    border-bottom: 25px solid #ECED6E;
+
+}
+.fresh-spices-section .content-section{
+    padding: 100px 0px;
+}
+.fresh-spices-section .bg-img{
+    background-image: url('../images/fresh-species.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fresh-spices-section h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.fresh-spices-section p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.fresh-spices-section a{
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* about section */
+
+.about-section-image{
+    background-image: url('../images/about-section-img.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+.about-section{
+    padding: 100px 10px 70px;
+    border-bottom: 25px solid #ECED6E;
+
+}
+
+.about-section h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+}
+.about-section p{
+    text-align: center;
+}
+.about-secondary-heading{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0;
+    color: gray;
+    text-transform: capitalize;
+}
+.about-section a{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--green);
+    padding: 8px 30px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* shop by catagory */
+
+.shop-by-catagory-section{
+    padding: 80px 10px;
+    background-color: #C3E9FC;
+    border-bottom: 25px solid #6FBD91;
+
+}
+
+.shop-by-catagory-section h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 30px;
+}
+
+.shop-catagory-card{
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.shop-catagory-card img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shop-catagory-card p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    padding: 10px 0px;
+}
+
+/* our way of life section */
+.our-way-of-life-section{
+    padding: 80px 10px;
+}
+
+.our-way-of-life-section h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 30px;
+}
+
+.our-way-of-life-section h3{
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.our-way-of-life-section p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.our-way-of-life-section a{
+    color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    padding: 7px 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* testimonial-section */
+.testimonial-section{
+    padding: 100px 0;
+    background-color: #C4E9FC;
+}
+
+.testimonial-section h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 30px;
+}
+.testimonial-slider .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial-slider .item img{
+    width: 50px;
+}
+.testimonial-slider .item h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--green);
+    margin-top: 20px;
+}
+.testimonial-slider .item p{
+    font-size: 16px;
+    font-weight: 500;
+    width: 75%;
+    text-align: center;
+}
+
+.testimonial-slider .owl-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.testimonial-slider .owl-dot{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: var(--white) !important;
+    margin: 4px;
+    border: 2px solid var(--green);
+}
+
+.testimonial-slider .owl-dot.active{
+    background: var(--green) !important;
+}
+
+/* news letter section */
+.news-letter-section{
+    padding: 10px;
+    background-color: var(--green);
+}
+.news-letter-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-letter-section h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.news-letter-section .newsletter-input-box{
+    background-color: var(--white);
+    padding: 10px 4px 10px 10px;
+    border-radius: 15px;
+}
+.news-letter-section .newsletter-input-box input{
+    border-style: none;
+    padding: 5px 50px 5px 5px;
+    outline: none;
+}
+.news-letter-section .newsletter-input-box a{
+    padding: 7px 30px;
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* news and blog section */
+
+.news-blog-section{
+    padding: 80px 10px;
+}
+
+.news-blog-section h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 30px;
+}
+
+.blog-card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-card h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--green);
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.blog-card .blog-dtls{
+    display: flex;
+    align-items: center;
+}
+
+
+.blog-card .blog-dtls p{
+    font-size: 14px;
+    color: gray;
+    margin-right: 20px;
+}
+
+.blog-card p{
+    color: #000;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.blog-card a{
+    font-size: 16px;
+    color: var(--green);
+}
+
+/* feature product section */
+
+.feature-product-section{
+    padding: 50px 10px;
+}
+
+.feature-product-section h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 30px;
+}
+
+.featured-product-card{
+    padding: 40px 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.322) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+}
+
+.featured-product-card h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--green);
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-top: 20px;
+}
+.featured-product-card p{
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+}
+
+.featured-product-card a{
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.feature-link{
+    font-size: 18px;
+    border-style: none;
+    color: black;
+    background-color: var(--white);
+    margin-right: 20px;
+}
+
+.feature-link.active{
+    border-style: none;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.nav-pills{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* topbar */
+
+.topbar{
+    padding: 10px;
+    background-color: var(--green);
+
+}
+
+.topbar .container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.select-store-btn{
+    border-style: none;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 60px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 30px;
+}
+
+.topbar a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* navbar */
+
+.miller-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.nav-links-div ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.nav-links-div ul li{
+    margin-right: 20px;
+
+}
+
+.nav-links-div ul li  a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+.icons ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.icons ul li{
+    margin-left: 20px;
+}
+
+.icons ul li  i{
+    color: var(--green);
+    text-decoration: none;
+}
+
+.icons ul li a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+/* carousel section */
+
+.carousel-item{
+    height: 90vh;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%,-50%);
+
+}
+
+.carousel-caption h5{
+    text-align: right;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    text-align: right;
+    color: #000;
+}
+
+.carousel-caption a{
+    font-size: 16px;
+    padding: 10px 25px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+}
